@@ -58,23 +58,20 @@
           }
 
           h3, .fakebutton {
-            position: relative;
-            z-index: 2;
-          }
-
-          h3 {
             @include font-condensed;
             font-size: 2em;
             line-height: 1.1em;
             margin: 0;
+            position: relative;
             text-shadow: 0 1px 0 #000;
+            z-index: 2;
           }
 
           .fakebutton {
             background: $main-cta;
             display: block;
-            padding: .5em 1em;
-            @include position(absolute, 0 -10px 10px -10px);
+            padding: 8px 24px;
+            @include position(absolute, 0 -10px -5px -10px);
           }
 
           img {
@@ -111,6 +108,15 @@
         @extend %grid-fund;
         float: left;
         margin: 0 25px 25px 0;
+        position: relative;
+
+        &:hover {
+          cursor: pointer;
+
+          .cta {
+            display: block;
+          }
+        }
 
         h3 {
           color: #fff;
@@ -122,7 +128,41 @@
         }
 
         .cta {
+          background: $main-cta;
+          @include box-sizing(border-box);
           display: none;
+          @include font-bold;
+          @include position(absolute, 0px 0px 0px 0px);
+
+          a {
+            color: #fff;
+            font-size: 1.2em;
+            opacity: .8;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: 0 1px 0 #000;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          .details {
+            display: block;
+            margin-top: 2em;
+            margin-bottom: 2em;
+          }
+
+          .givenow, .share {
+            background: $secondary-cta;
+            float: left;
+            padding: 10px;
+            width: 80px;
+          }
+
+          .share {
+            width: 55px;
+          }
         }
       }
     }

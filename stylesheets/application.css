@@ -435,22 +435,21 @@ h1, h2, h3, h4, h5, p, li {
           .fund-grid .featured-funds ul li a:hover .fakebutton {
             background: #cc3300; }
           .fund-grid .featured-funds ul li a h3, .fund-grid .featured-funds ul li a .fakebutton {
-            position: relative;
-            z-index: 2; }
-          .fund-grid .featured-funds ul li a h3 {
             font-family: "pragmatica-web-condensed", sans-serif;
             font-weight: 400;
             font-size: 2em;
             line-height: 1.1em;
             margin: 0;
-            text-shadow: 0 1px 0 black; }
+            position: relative;
+            text-shadow: 0 1px 0 black;
+            z-index: 2; }
           .fund-grid .featured-funds ul li a .fakebutton {
             background: #ff6600;
             display: block;
-            padding: 0.5em 1em;
+            padding: 8px 24px;
             position: absolute;
             right: -10px;
-            bottom: 10px;
+            bottom: -5px;
             left: -10px; }
           .fund-grid .featured-funds ul li a img {
             position: absolute;
@@ -473,7 +472,12 @@ h1, h2, h3, h4, h5, p, li {
       -webkit-appearance: none; }
   .fund-grid .filtered-funds ul li {
     float: left;
-    margin: 0 25px 25px 0; }
+    margin: 0 25px 25px 0;
+    position: relative; }
+    .fund-grid .filtered-funds ul li:hover {
+      cursor: pointer; }
+      .fund-grid .filtered-funds ul li:hover .cta {
+        display: block; }
     .fund-grid .filtered-funds ul li h3 {
       color: #fff;
       font-family: "pragmatica-web-condensed", sans-serif;
@@ -483,4 +487,35 @@ h1, h2, h3, h4, h5, p, li {
       margin: 0;
       text-shadow: 0 1px 0 black; }
     .fund-grid .filtered-funds ul li .cta {
-      display: none; }
+      background: #ff6600;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      display: none;
+      font-family: "pragmatica-web", sans-serif;
+      font-weight: 700;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px; }
+      .fund-grid .filtered-funds ul li .cta a {
+        color: #fff;
+        font-size: 1.2em;
+        opacity: .8;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0 1px 0 black; }
+        .fund-grid .filtered-funds ul li .cta a:hover {
+          opacity: 1; }
+      .fund-grid .filtered-funds ul li .cta .details {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em; }
+      .fund-grid .filtered-funds ul li .cta .givenow, .fund-grid .filtered-funds ul li .cta .share {
+        background: #cc3300;
+        float: left;
+        padding: 10px;
+        width: 80px; }
+      .fund-grid .filtered-funds ul li .cta .share {
+        width: 55px; }
