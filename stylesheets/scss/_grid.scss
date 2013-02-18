@@ -11,6 +11,24 @@
 
     .cart {
       @include position(fixed, 0px 25px 0 0);
+      z-index: 10;
+
+      a {
+        background: $secondary-cta;
+        color: #fff;
+        display: block;
+        @include font-condensed;
+        font-size: 1.5em;
+        line-height: 1.1em;
+        margin: 0;
+        padding: 8px 10px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+
+        &:hover {
+          background: $main-cta;
+        }
+      }
     }
   }
 
@@ -103,8 +121,8 @@
       }
     }
 
-    ul {
-      li:not(.detail) {
+    > ul {
+      > li:not(.detail) {
         @extend %grid-fund;
         float: left;
         margin: 0 25px 25px 0;
@@ -181,7 +199,91 @@
 
       li.detail {
         background: #fff;
+        margin-bottoM: 25px;
+        overflow: auto;
         width: 100%;
+
+        .content {
+          float: left;
+          width: 375px;
+
+          h2 {
+            color: $sidebar-color;
+            @include font-condensed;
+            font-size: 2.6em;
+            line-height: 1.1em;
+            margin-bottom: .5em;
+          }
+
+          .cta {
+            display: block;
+            overflow: auto;
+
+            a {
+              background: $main-cta;
+              color: #fff;
+              display: block;
+              float: left;
+              @include font-condensed;
+              font-size: 1.4em;
+              line-height: 1.2em;
+              opacity: .8;
+              padding: 10px;
+              text-decoration: none;
+              text-shadow: 0 1px 0 #000;
+
+              &:hover {
+                opacity: 1;
+              }
+
+              &.cart {
+                background: $secondary-cta;
+              }
+            }
+          }
+
+          article {
+            font-size: 1.4em;
+          }
+
+          .donors-you-know {
+            h4 {
+              margin-bottom: .5em;
+            }
+
+            ul {
+              li {
+                float: left;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+
+        aside {
+          float: left;
+          margin-left: 25px;
+          width: 575px;
+
+          li {
+            float: left;
+            margin-right: 25px;
+            width: 175px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            figcaption {
+              @include font-bold;
+              margin-top: -3em;
+            }
+
+            img {
+              border-radius: 200px;
+            }
+          }
+        }
       }
     }
   }
