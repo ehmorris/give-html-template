@@ -1,13 +1,17 @@
 .fund-grid {
   @include box-sizing(border-box);
-  padding: 25px;
+  padding: 25px 0 0 25px;
   @include position(absolute, 0 0px 0 250px);
 
   header {
-  .logo {
-    margin: 0;
-    text-align: center;
-  }
+    .logo {
+      margin: 0;
+      text-align: center;
+    }
+
+    .cart {
+      @include position(fixed, 0px 25px 0 0);
+    }
   }
 
   .featured-funds {
@@ -15,6 +19,49 @@
   }
 
   .filtered-funds {
-  
+    .filter {
+      margin-bottom: 25px;
+      text-align: center;
+
+      h2, select {
+        display: inline-block;
+        @include font-light;
+        font-size: 1.6em;
+      }
+
+      select {
+        background: #ddd;
+        border: 0;
+        border-radius: 0;
+        margin-left: .4em;
+        padding: .1em .4em;
+        -webkit-appearance: none;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        @extend %grid-fund;
+        float: left;
+        margin: 0 25px 25px 0;
+
+        h3 {
+          color: #fff;
+          @include font-condensed;
+          font-size: 1.4em;
+          line-height: 1.2em;
+          margin: 0;
+          text-shadow: 0 0 1px #000;
+        }
+
+        .cta {
+          display: none;
+        }
+      }
+    }
   }
 }

@@ -27,3 +27,13 @@
   font-family: $font-condensed;
   font-weight: 900;
 }
+
+%grid-fund {
+  background: $sidebar-color;
+  @include box-sizing(border-box);
+  display: block;
+  height: 140px;
+  overflow: hidden;
+  padding: 1em;
+  width: 175px;
+}

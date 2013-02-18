@@ -330,6 +330,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.fund-grid .filtered-funds ul li {
+  background: #333333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 140px;
+  overflow: hidden;
+  padding: 1em;
+  width: 175px; }
+
 body {
   font-family: "pragmatica-web", sans-serif;
   font-weight: 400;
@@ -382,10 +393,46 @@ h1, h2, h3, h4, h5, p, li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 25px;
+  padding: 25px 0 0 25px;
   position: absolute;
   right: 0px;
   left: 250px; }
   .fund-grid header .logo {
     margin: 0;
     text-align: center; }
+  .fund-grid header .cart {
+    position: fixed;
+    top: 0px;
+    right: 25px; }
+  .fund-grid .filtered-funds .filter {
+    margin-bottom: 25px;
+    text-align: center; }
+    .fund-grid .filtered-funds .filter h2, .fund-grid .filtered-funds .filter select {
+      display: inline-block;
+      font-family: "pragmatica-web", sans-serif;
+      font-weight: 200;
+      font-size: 1.6em; }
+    .fund-grid .filtered-funds .filter select {
+      background: #ddd;
+      border: 0;
+      border-radius: 0;
+      margin-left: .4em;
+      padding: 0.1em 0.4em;
+      -webkit-appearance: none; }
+  .fund-grid .filtered-funds ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .fund-grid .filtered-funds ul li {
+      float: left;
+      margin: 0 25px 25px 0; }
+      .fund-grid .filtered-funds ul li h3 {
+        color: #fff;
+        font-family: "pragmatica-web-condensed", sans-serif;
+        font-weight: 400;
+        font-size: 1.4em;
+        line-height: 1.2em;
+        margin: 0;
+        text-shadow: 0 0 1px black; }
+      .fund-grid .filtered-funds ul li .cta {
+        display: none; }
