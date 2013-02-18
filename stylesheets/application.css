@@ -330,7 +330,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.fund-grid .featured-funds ul li a, .fund-grid .filtered-funds ul li {
+.fund-grid .featured-funds ul li a, .fund-grid .filtered-funds ul li:not(.detail) {
   background: #333333;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -470,15 +470,15 @@ h1, h2, h3, h4, h5, p, li {
       margin-left: .4em;
       padding: 0.1em 0.4em;
       -webkit-appearance: none; }
-  .fund-grid .filtered-funds ul li {
+  .fund-grid .filtered-funds ul li:not(.detail) {
     float: left;
     margin: 0 25px 25px 0;
     position: relative; }
-    .fund-grid .filtered-funds ul li:hover {
+    .fund-grid .filtered-funds ul li:not(.detail):hover {
       cursor: pointer; }
-      .fund-grid .filtered-funds ul li:hover .cta {
+      .fund-grid .filtered-funds ul li:not(.detail):hover .cta {
         display: block; }
-    .fund-grid .filtered-funds ul li.selected:after {
+    .fund-grid .filtered-funds ul li:not(.detail).selected:after {
       background: #fff;
       content: '';
       height: 16px;
@@ -493,7 +493,7 @@ h1, h2, h3, h4, h5, p, li {
       transform: rotate(45deg);
       width: 16px;
       z-index: 2; }
-    .fund-grid .filtered-funds ul li h3 {
+    .fund-grid .filtered-funds ul li:not(.detail) h3 {
       color: #fff;
       font-family: "pragmatica-web-condensed", sans-serif;
       font-weight: 400;
@@ -501,7 +501,7 @@ h1, h2, h3, h4, h5, p, li {
       line-height: 1.2em;
       margin: 0;
       text-shadow: 0 1px 0 black; }
-    .fund-grid .filtered-funds ul li .cta {
+    .fund-grid .filtered-funds ul li:not(.detail) .cta {
       background: #ff6600;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -515,24 +515,24 @@ h1, h2, h3, h4, h5, p, li {
       bottom: 0px;
       left: 0px;
       z-index: 3; }
-      .fund-grid .filtered-funds ul li .cta a {
+      .fund-grid .filtered-funds ul li:not(.detail) .cta a {
         color: #fff;
         font-size: 1.2em;
         opacity: .8;
         text-align: center;
         text-decoration: none;
         text-shadow: 0 1px 0 black; }
-        .fund-grid .filtered-funds ul li .cta a:hover {
+        .fund-grid .filtered-funds ul li:not(.detail) .cta a:hover {
           opacity: 1; }
-      .fund-grid .filtered-funds ul li .cta .details {
+      .fund-grid .filtered-funds ul li:not(.detail) .cta .details {
         display: block;
         padding: 2.2em 0; }
-      .fund-grid .filtered-funds ul li .cta .givenow, .fund-grid .filtered-funds ul li .cta .share {
+      .fund-grid .filtered-funds ul li:not(.detail) .cta .givenow, .fund-grid .filtered-funds ul li:not(.detail) .cta .share {
         background: #cc3300;
         float: left;
         padding: 14px 10px;
         width: 80px; }
-      .fund-grid .filtered-funds ul li .cta .share {
+      .fund-grid .filtered-funds ul li:not(.detail) .cta .share {
         width: 55px; }
   .fund-grid .filtered-funds ul li.detail {
     background: #fff;
