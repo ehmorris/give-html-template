@@ -14,8 +14,75 @@
     }
   }
 
+  .featured-funds, .filtered-funds {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   .featured-funds {
-  
+    margin-bottom: 3.5em;
+
+    h2 {
+      @include font-light;
+      font-size: 2em;
+      margin-bottom: 1em;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    ul {
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin: 0 35px 35px 0;
+
+        a {
+          @extend %grid-fund;
+          color: #fff;
+          float: left;
+          height: 180px;
+          overflow: visible;
+          padding: 1em;
+          position: relative;
+          text-decoration: none;
+          width: 240px;
+
+          &:hover {
+            .fakebutton {
+              background: $secondary-cta;
+            }
+          }
+
+          h3, .fakebutton {
+            position: relative;
+            z-index: 2;
+          }
+
+          h3 {
+            @include font-condensed;
+            font-size: 2em;
+            line-height: 1.1em;
+            margin: 0;
+            text-shadow: 0 1px 0 #000;
+          }
+
+          .fakebutton {
+            background: $main-cta;
+            display: block;
+            padding: .5em 1em;
+            @include position(absolute, 0 -10px 10px -10px);
+          }
+
+          img {
+            @include position(absolute, 0px 0 0 0px);
+          }
+        }
+      }
+    }
   }
 
   .filtered-funds {
@@ -26,7 +93,7 @@
       h2, select {
         display: inline-block;
         @include font-light;
-        font-size: 1.6em;
+        font-size: 1.8em;
       }
 
       select {
@@ -40,10 +107,6 @@
     }
 
     ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-
       li {
         @extend %grid-fund;
         float: left;
@@ -55,7 +118,7 @@
           font-size: 1.4em;
           line-height: 1.2em;
           margin: 0;
-          text-shadow: 0 0 1px #000;
+          text-shadow: 0 1px 0 #000;
         }
 
         .cta {

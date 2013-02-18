@@ -330,7 +330,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.fund-grid .filtered-funds ul li {
+.fund-grid .featured-funds ul li a, .fund-grid .filtered-funds ul li {
   background: #333333;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -339,6 +339,7 @@ table {
   height: 140px;
   overflow: hidden;
   padding: 1em;
+  text-align: left;
   width: 175px; }
 
 body {
@@ -373,7 +374,7 @@ h1, h2, h3, h4, h5, p, li {
     .fund-causes ul li {
       display: block;
       margin-bottom: .8em;
-      text-shadow: 0 0 1px black; }
+      text-shadow: 0 1px 0 black; }
       .fund-causes ul li a {
         color: #ccc;
         display: block;
@@ -404,6 +405,57 @@ h1, h2, h3, h4, h5, p, li {
     position: fixed;
     top: 0px;
     right: 25px; }
+  .fund-grid .featured-funds ul, .fund-grid .filtered-funds ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .fund-grid .featured-funds {
+    margin-bottom: 3.5em; }
+    .fund-grid .featured-funds h2 {
+      font-family: "pragmatica-web", sans-serif;
+      font-weight: 200;
+      font-size: 2em;
+      margin-bottom: 1em;
+      text-align: center;
+      text-transform: capitalize; }
+    .fund-grid .featured-funds ul {
+      text-align: center; }
+      .fund-grid .featured-funds ul li {
+        display: inline-block;
+        margin: 0 35px 35px 0; }
+        .fund-grid .featured-funds ul li a {
+          color: #fff;
+          float: left;
+          height: 180px;
+          overflow: visible;
+          padding: 1em;
+          position: relative;
+          text-decoration: none;
+          width: 240px; }
+          .fund-grid .featured-funds ul li a:hover .fakebutton {
+            background: #cc3300; }
+          .fund-grid .featured-funds ul li a h3, .fund-grid .featured-funds ul li a .fakebutton {
+            position: relative;
+            z-index: 2; }
+          .fund-grid .featured-funds ul li a h3 {
+            font-family: "pragmatica-web-condensed", sans-serif;
+            font-weight: 400;
+            font-size: 2em;
+            line-height: 1.1em;
+            margin: 0;
+            text-shadow: 0 1px 0 black; }
+          .fund-grid .featured-funds ul li a .fakebutton {
+            background: #ff6600;
+            display: block;
+            padding: 0.5em 1em;
+            position: absolute;
+            right: -10px;
+            bottom: 10px;
+            left: -10px; }
+          .fund-grid .featured-funds ul li a img {
+            position: absolute;
+            top: 0px;
+            left: 0px; }
   .fund-grid .filtered-funds .filter {
     margin-bottom: 25px;
     text-align: center; }
@@ -411,7 +463,7 @@ h1, h2, h3, h4, h5, p, li {
       display: inline-block;
       font-family: "pragmatica-web", sans-serif;
       font-weight: 200;
-      font-size: 1.6em; }
+      font-size: 1.8em; }
     .fund-grid .filtered-funds .filter select {
       background: #ddd;
       border: 0;
@@ -419,20 +471,16 @@ h1, h2, h3, h4, h5, p, li {
       margin-left: .4em;
       padding: 0.1em 0.4em;
       -webkit-appearance: none; }
-  .fund-grid .filtered-funds ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-    .fund-grid .filtered-funds ul li {
-      float: left;
-      margin: 0 25px 25px 0; }
-      .fund-grid .filtered-funds ul li h3 {
-        color: #fff;
-        font-family: "pragmatica-web-condensed", sans-serif;
-        font-weight: 400;
-        font-size: 1.4em;
-        line-height: 1.2em;
-        margin: 0;
-        text-shadow: 0 0 1px black; }
-      .fund-grid .filtered-funds ul li .cta {
-        display: none; }
+  .fund-grid .filtered-funds ul li {
+    float: left;
+    margin: 0 25px 25px 0; }
+    .fund-grid .filtered-funds ul li h3 {
+      color: #fff;
+      font-family: "pragmatica-web-condensed", sans-serif;
+      font-weight: 400;
+      font-size: 1.4em;
+      line-height: 1.2em;
+      margin: 0;
+      text-shadow: 0 1px 0 black; }
+    .fund-grid .filtered-funds ul li .cta {
+      display: none; }
