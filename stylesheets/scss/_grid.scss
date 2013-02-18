@@ -118,6 +118,19 @@
           }
         }
 
+        &.selected {
+          &:after {
+            background: #fff;
+            content: '';
+            height: 16px;
+            margin-left: -8px;
+            @include position(absolute, 0 0 -8px 50%);
+            @include transform(rotate(45deg));
+            width: 16px;
+            z-index: 2;
+          }
+        }
+
         h3 {
           color: #fff;
           @include font-condensed;
@@ -133,6 +146,7 @@
           display: none;
           @include font-bold;
           @include position(absolute, 0px 0px 0px 0px);
+          z-index: 3;
 
           a {
             color: #fff;
@@ -149,14 +163,13 @@
 
           .details {
             display: block;
-            margin-top: 2em;
-            margin-bottom: 2em;
+            padding: 2.2em 0;
           }
 
           .givenow, .share {
             background: $secondary-cta;
             float: left;
-            padding: 10px;
+            padding: 14px 10px;
             width: 80px;
           }
 
@@ -164,6 +177,11 @@
             width: 55px;
           }
         }
+      }
+
+      li.detail {
+        background: #fff;
+        width: 100%;
       }
     }
   }

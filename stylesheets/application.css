@@ -478,6 +478,21 @@ h1, h2, h3, h4, h5, p, li {
       cursor: pointer; }
       .fund-grid .filtered-funds ul li:hover .cta {
         display: block; }
+    .fund-grid .filtered-funds ul li.selected:after {
+      background: #fff;
+      content: '';
+      height: 16px;
+      margin-left: -8px;
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 16px;
+      z-index: 2; }
     .fund-grid .filtered-funds ul li h3 {
       color: #fff;
       font-family: "pragmatica-web-condensed", sans-serif;
@@ -498,7 +513,8 @@ h1, h2, h3, h4, h5, p, li {
       top: 0px;
       right: 0px;
       bottom: 0px;
-      left: 0px; }
+      left: 0px;
+      z-index: 3; }
       .fund-grid .filtered-funds ul li .cta a {
         color: #fff;
         font-size: 1.2em;
@@ -510,12 +526,14 @@ h1, h2, h3, h4, h5, p, li {
           opacity: 1; }
       .fund-grid .filtered-funds ul li .cta .details {
         display: block;
-        margin-top: 2em;
-        margin-bottom: 2em; }
+        padding: 2.2em 0; }
       .fund-grid .filtered-funds ul li .cta .givenow, .fund-grid .filtered-funds ul li .cta .share {
         background: #cc3300;
         float: left;
-        padding: 10px;
+        padding: 14px 10px;
         width: 80px; }
       .fund-grid .filtered-funds ul li .cta .share {
         width: 55px; }
+  .fund-grid .filtered-funds ul li.detail {
+    background: #fff;
+    width: 100%; }
