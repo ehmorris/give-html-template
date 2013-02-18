@@ -338,7 +338,7 @@ body {
 h1, h2, h3, h4, h5, p, li {
   line-height: 1.4em; }
 
-.causes {
+.fund-causes {
   background: #333333;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -351,29 +351,41 @@ h1, h2, h3, h4, h5, p, li {
   top: 0px;
   bottom: 0px;
   left: 0px; }
-  .causes > h2 {
+  .fund-causes > h2 {
     font-family: "pragmatica-web-condensed", sans-serif;
     font-weight: 400;
     margin: 0; }
-  .causes ul {
+  .fund-causes ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    .causes ul li {
+    .fund-causes ul li {
       display: block;
       margin-bottom: .8em;
       text-shadow: 0 0 1px black; }
-      .causes ul li a {
+      .fund-causes ul li a {
         color: #ccc;
         display: block;
         text-decoration: none; }
-        .causes ul li a:hover {
+        .fund-causes ul li a:hover {
           color: #fff; }
-  .causes .selected {
+  .fund-causes .selected {
     border-bottom: 2px solid #444444;
     margin: 25px 0;
     padding-bottom: 20px; }
-    .causes .selected a {
+    .fund-causes .selected a {
       border: 3px solid white;
       color: #fff;
       padding: 8px 10px; }
+
+.fund-grid {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px;
+  position: absolute;
+  right: 0px;
+  left: 250px; }
+  .fund-grid header .logo {
+    margin: 0;
+    text-align: center; }

@@ -1,4 +1,4 @@
-.causes {
+.fund-causes {
   background: $sidebar-color;
   @include box-sizing(border-box);
   color: #ccc;
@@ -44,9 +44,5 @@
       color: #fff;
       padding: 8px 10px;
     }
-  }
-
-  .unselected {
-  
   }
 }
