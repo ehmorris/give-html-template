@@ -1,0 +1,52 @@
+.causes {
+  background: $sidebar-color;
+  @include box-sizing(border-box);
+  color: #ccc;
+  max-width: 250px;
+  overflow-y: scroll;
+  padding: 25px;
+  @include position(fixed, 0px 0 0px 0px);
+
+  > h2 {
+    @include font-condensed;
+    margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      margin-bottom: .8em;
+      text-shadow: 0 0 1px #000;
+
+      a {
+        color: #ccc;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .selected {
+    border-bottom: 2px solid #444;
+    margin: 25px 0;
+    padding-bottom: 20px;
+
+    a {
+      border: 3px solid #fff;
+      color: #fff;
+      padding: 8px 10px;
+    }
+  }
+
+  .unselected {
+  
+  }
+}

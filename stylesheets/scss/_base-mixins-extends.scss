@@ -1,0 +1,29 @@
+@mixin font-light {
+  font-family: $font-main;
+  font-weight: 200;
+}
+
+@mixin font-normal {
+  font-family: $font-main;
+  font-weight: 400;
+}
+
+@mixin font-bold {
+  font-family: $font-main;
+  font-weight: 700;
+}
+
+@mixin font-black {
+  font-family: $font-main;
+  font-weight: 900;
+}
+
+@mixin font-condensed {
+  font-family: $font-condensed;
+  font-weight: 400;
+}
+
+@mixin font-condensed-black {
+  font-family: $font-condensed;
+  font-weight: 900;
+}
