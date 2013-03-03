@@ -1,5 +1,5 @@
-.fund-grid .filtered-funds > ul {
-  > li:not(.detail) {
+.fund-grid .filtered-funds ul.fundlist {
+  li.fund {
     @extend %grid-fund;
     display: inline-block;
     margin: 0 12px 12px 0;
