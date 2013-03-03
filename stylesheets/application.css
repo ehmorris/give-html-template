@@ -490,14 +490,13 @@ h1, h2, h3, h4, h5, p, li {
       -webkit-appearance: none; }
 
 .fund-grid .filtered-funds ul.fundlist li.article {
-  display: inline-block;
+  display: block;
+  float: left;
   height: 322px;
   margin: 0 12px 12px 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  vertical-align: top;
-  width: 382px;
-  float: left; }
+  width: 382px; }
   .fund-grid .filtered-funds ul.fundlist li.article h3 {
     color: #333333;
     font-family: "pragmatica-web-condensed", sans-serif;
@@ -509,19 +508,19 @@ h1, h2, h3, h4, h5, p, li {
   .fund-grid .filtered-funds ul.fundlist li.article p {
     font-size: 1.2em; }
 .fund-grid .filtered-funds ul.fundlist li.video {
-  background: #333333;
-  display: inline-block;
+  background: rgba(51, 51, 51, 0.7);
+  display: block;
+  float: left;
   height: 322px;
   margin: 0 12px 12px 0;
-  vertical-align: top;
-  width: 382px;
-  float: left; }
+  width: 382px; }
+  .fund-grid .filtered-funds ul.fundlist li.video iframe {
+    margin-top: 50px; }
 .fund-grid .filtered-funds ul.fundlist li.fund {
-  display: inline-block;
+  display: block;
+  float: left;
   margin: 0 12px 12px 0;
-  position: relative;
-  vertical-align: top;
-  float: left; }
+  position: relative; }
   .fund-grid .filtered-funds ul.fundlist li.fund:hover {
     cursor: pointer; }
     .fund-grid .filtered-funds ul.fundlist li.fund:hover .cta {
