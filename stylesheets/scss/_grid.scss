@@ -124,9 +124,10 @@
     > ul {
       > li:not(.detail) {
         @extend %grid-fund;
-        float: left;
-        margin: 0 16px 16px 0;
+        display: inline-block;
+        margin: 0 12px 12px 0;
         position: relative;
+        vertical-align: top;
 
         &:hover {
           cursor: pointer;
@@ -199,13 +200,15 @@
 
       li.detail {
         background: #fff;
-        margin-bottoM: 25px;
+        @include box-shadow(0 20px 20px -10px rgba(0, 0, 0, .2));
         overflow: auto;
-        width: 100%;
+        padding-bottom: 25px;
+        @include position(absolute, 0 0px 0 25px);
+        z-index: 2;
 
         .content {
           float: left;
-          width: 375px;
+          width: 384px;
 
           h2 {
             color: $sidebar-color;
@@ -247,8 +250,12 @@
           }
 
           .donors-you-know {
+            margin-bottom: 25px;
+            overflow: auto;
+
             h4 {
               margin-bottom: .5em;
+              margin-top: 0;
             }
 
             ul {
@@ -261,14 +268,13 @@
         }
 
         aside {
-          float: left;
-          margin-left: 25px;
-          width: 575px;
+          display: inline-block;
+          margin-left: 16px;
 
           li {
-            float: left;
-            margin-right: 25px;
-            width: 175px;
+            display: inline-block;
+            margin-right: 12px;
+            width: 185px;
 
             &:last-child {
               margin-right: 0;
@@ -281,6 +287,8 @@
 
             img {
               border-radius: 200px;
+              height: 185px;
+              width: 185px;
             }
           }
         }
