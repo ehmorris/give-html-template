@@ -18,7 +18,7 @@
         color: #fff;
         display: block;
         @include font-condensed;
-        font-size: 1.5em;
+        font-size: 1.4em;
         line-height: 1.1em;
         margin: 0;
         padding: 8px 10px;
@@ -125,7 +125,7 @@
       > li:not(.detail) {
         @extend %grid-fund;
         float: left;
-        margin: 0 25px 25px 0;
+        margin: 0 16px 16px 0;
         position: relative;
 
         &:hover {
@@ -181,7 +181,7 @@
 
           .details {
             display: block;
-            padding: 2.2em 0;
+            padding: 45px 0;
           }
 
           .givenow, .share {
@@ -192,7 +192,7 @@
           }
 
           .share {
-            width: 55px;
+            width: 65px;
           }
         }
       }

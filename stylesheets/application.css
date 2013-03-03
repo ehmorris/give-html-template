@@ -336,11 +336,11 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  height: 140px;
+  height: 155px;
   overflow: hidden;
   padding: 1em;
   text-align: left;
-  width: 175px; }
+  width: 185px; }
 
 body {
   font-family: "pragmatica-web", sans-serif;
@@ -412,7 +412,7 @@ h1, h2, h3, h4, h5, p, li {
       display: block;
       font-family: "pragmatica-web-condensed", sans-serif;
       font-weight: 400;
-      font-size: 1.5em;
+      font-size: 1.4em;
       line-height: 1.1em;
       margin: 0;
       padding: 8px 10px;
@@ -487,7 +487,7 @@ h1, h2, h3, h4, h5, p, li {
       -webkit-appearance: none; }
   .fund-grid .filtered-funds > ul > li:not(.detail) {
     float: left;
-    margin: 0 25px 25px 0;
+    margin: 0 16px 16px 0;
     position: relative; }
     .fund-grid .filtered-funds > ul > li:not(.detail):hover {
       cursor: pointer; }
@@ -541,14 +541,14 @@ h1, h2, h3, h4, h5, p, li {
           opacity: 1; }
       .fund-grid .filtered-funds > ul > li:not(.detail) .cta .details {
         display: block;
-        padding: 2.2em 0; }
+        padding: 45px 0; }
       .fund-grid .filtered-funds > ul > li:not(.detail) .cta .givenow, .fund-grid .filtered-funds > ul > li:not(.detail) .cta .share {
         background: #cc3300;
         float: left;
         padding: 14px 10px;
         width: 80px; }
       .fund-grid .filtered-funds > ul > li:not(.detail) .cta .share {
-        width: 55px; }
+        width: 65px; }
   .fund-grid .filtered-funds > ul li.detail {
     background: #fff;
     margin-bottoM: 25px;
