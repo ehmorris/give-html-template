@@ -4,8 +4,8 @@
     @include box-shadow(0 20px 20px -10px rgba(0, 0, 0, .2));
     display: none;
     overflow: auto;
-    padding-bottom: 25px;
-    @include position(absolute, 0 0px 0 25px);
+    padding: 25px 0;
+    @include position(absolute, 0 0px 0 0px);
     z-index: 9;
 
     &.active {
@@ -28,7 +28,7 @@
         @include font-condensed;
         font-size: 2.6em;
         line-height: 1.1em;
-        margin-bottom: .5em;
+        margin: 0 0 .5em 0;
       }
 
       .cta {

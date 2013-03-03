@@ -6,7 +6,9 @@ $(function() {
       $(this).parents('li').next('.detail').removeClass('active');
     }
     else if ($(this).parents('li').next('.detail').length > 0) {
+      var topval = ($(this).parents('li').offset().top + $(this).parents('li').outerHeight()) - $('.fundlist').offset().top;
       $(this).parents('li').addClass('selected');
+      $(this).parents('li').next('.detail').css('top', topval);
       $(this).parents('li').next('.detail').addClass('active');
     }
 
