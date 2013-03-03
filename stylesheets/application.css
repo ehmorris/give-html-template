@@ -599,8 +599,7 @@ h1, h2, h3, h4, h5, p, li {
       .fund-grid .filtered-funds > ul li.detail .content article {
         font-size: 1.4em; }
       .fund-grid .filtered-funds > ul li.detail .content .donors-you-know {
-        margin-bottom: 25px;
-        margin-top: 12px;
+        margin: 25px 0 0 0;
         overflow: auto; }
         .fund-grid .filtered-funds > ul li.detail .content .donors-you-know h4 {
           margin-bottom: .5em;
@@ -608,6 +607,13 @@ h1, h2, h3, h4, h5, p, li {
         .fund-grid .filtered-funds > ul li.detail .content .donors-you-know ul li {
           float: left;
           margin-right: 10px; }
+        .fund-grid .filtered-funds > ul li.detail .content .donors-you-know p {
+          clear: both;
+          display: block;
+          margin: 0; }
+          .fund-grid .filtered-funds > ul li.detail .content .donors-you-know p a {
+            color: #ff6600;
+            text-decoration: none; }
     .fund-grid .filtered-funds > ul li.detail aside {
       display: inline-block;
       margin-left: 16px; }
