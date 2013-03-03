@@ -1,0 +1,85 @@
+.fund-grid .filtered-funds > ul {
+  > li:not(.detail) {
+    @extend %grid-fund;
+    display: inline-block;
+    margin: 0 12px 12px 0;
+    position: relative;
+    vertical-align: top;
+
+    &:hover {
+      cursor: pointer;
+
+      .cta {
+        display: block;
+      }
+    }
+
+    &.selected {
+      &:after {
+        background: #fff;
+        content: '';
+        height: 16px;
+        margin-left: -8px;
+        @include position(absolute, 0 0 -8px 50%);
+        @include transform(rotate(45deg));
+        width: 16px;
+        z-index: 2;
+      }
+    }
+
+    h3 {
+      color: #fff;
+      @include font-condensed;
+      font-size: 1.4em;
+      line-height: 1.2em;
+      margin: 0;
+      position: relative;
+      text-shadow: 0 1px 0 #000;
+      z-index: 2;
+    }
+
+    img {
+      opacity: .8;
+      @include position(absolute, 0px 0 0 0px);
+      z-index: 1;
+    }
+
+    .cta {
+      background: $main-cta;
+      @include box-sizing(border-box);
+      display: none;
+      @include font-bold;
+      @include position(absolute, 0px 0px 0px 0px);
+      z-index: 3;
+
+      a {
+        color: #fff;
+        font-size: 1.2em;
+        opacity: .8;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .details {
+        display: block;
+        padding: 45px 0;
+      }
+
+      .givenow, .share {
+        background: $secondary-cta;
+        float: left;
+        padding: 14px 10px;
+        width: 80px;
+      }
+
+      .share {
+        width: 65px;
+      }
+    }
+  }
+}
