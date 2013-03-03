@@ -489,6 +489,25 @@ h1, h2, h3, h4, h5, p, li {
       padding: 0.1em 0.4em;
       -webkit-appearance: none; }
 
+.fund-grid .filtered-funds ul.fundlist li.article {
+  display: inline-block;
+  float: left;
+  height: 310px;
+  margin: 0 12px 12px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  width: 388px; }
+  .fund-grid .filtered-funds ul.fundlist li.article h3 {
+    color: #333333;
+    font-family: "pragmatica-web-condensed", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1.1em;
+    margin: 0.5em 0;
+    margin-bottom: .5em; }
+  .fund-grid .filtered-funds ul.fundlist li.article p {
+    font-size: 1.2em; }
 .fund-grid .filtered-funds ul.fundlist li.fund {
   display: inline-block;
   margin: 0 12px 12px 0;
