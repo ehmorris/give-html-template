@@ -1,13 +1,14 @@
 .fund-grid .filtered-funds ul.fundlist {
   li.article {
     display: inline-block;
-    float: left;
-    height: 310px;
+    height: 322px;
     margin: 0 12px 12px 0;
     overflow: hidden;
     text-overflow: ellipsis;
     vertical-align: top;
-    width: 388px;
+    width: 382px;
+
+    float: left;
 
     h3 {
       color: $sidebar-color;
@@ -23,12 +24,25 @@
     }
   }
 
+  li.video {
+    background: $sidebar-color;
+    display: inline-block;
+    height: 322px;
+    margin: 0 12px 12px 0;
+    vertical-align: top;
+    width: 382px;
+
+    float: left;
+  }
+
   li.fund {
     @extend %grid-fund;
     display: inline-block;
     margin: 0 12px 12px 0;
     position: relative;
     vertical-align: top;
+
+    float: left;
 
     &:hover {
       cursor: pointer;

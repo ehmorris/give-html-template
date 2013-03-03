@@ -14,4 +14,9 @@ $(function() {
   });
 
   $('article').fitVids();
+  $('li').fitVids();
+
+  $('.fundlist').masonry({
+    itemSelector : '.fund, .video, .article'
+  });
 });
