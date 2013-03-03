@@ -563,9 +563,12 @@ h1, h2, h3, h4, h5, p, li {
     z-index: 2; }
     .fund-grid .filtered-funds > ul li.detail.active {
       display: block; }
+    .fund-grid .filtered-funds > ul li.detail.testimonials .content {
+      width: 384px;
+      float: left; }
     .fund-grid .filtered-funds > ul li.detail .content {
-      float: left;
-      width: 384px; }
+      margin: auto;
+      width: 80%; }
       .fund-grid .filtered-funds > ul li.detail .content h2 {
         color: #333333;
         font-family: "pragmatica-web-condensed", sans-serif;
@@ -597,6 +600,7 @@ h1, h2, h3, h4, h5, p, li {
         font-size: 1.4em; }
       .fund-grid .filtered-funds > ul li.detail .content .donors-you-know {
         margin-bottom: 25px;
+        margin-top: 12px;
         overflow: auto; }
         .fund-grid .filtered-funds > ul li.detail .content .donors-you-know h4 {
           margin-bottom: .5em;

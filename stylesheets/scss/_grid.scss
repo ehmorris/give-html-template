@@ -211,9 +211,16 @@
           display: block;
         }
 
+        &.testimonials {
+          .content {
+            width: 384px;
+            float: left;
+          }
+        }
+
         .content {
-          float: left;
-          width: 384px;
+          margin: auto;
+          width: 80%;
 
           h2 {
             color: $sidebar-color;
@@ -256,6 +263,7 @@
 
           .donors-you-know {
             margin-bottom: 25px;
+            margin-top: 12px;
             overflow: auto;
 
             h4 {
