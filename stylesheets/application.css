@@ -554,12 +554,15 @@ h1, h2, h3, h4, h5, p, li {
     background: #fff;
     -webkit-box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);
+    display: none;
     overflow: auto;
     padding-bottom: 25px;
     position: absolute;
     right: 0px;
     left: 25px;
     z-index: 2; }
+    .fund-grid .filtered-funds > ul li.detail.active {
+      display: block; }
     .fund-grid .filtered-funds > ul li.detail .content {
       float: left;
       width: 384px; }
