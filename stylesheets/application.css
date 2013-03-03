@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, p, li {
   right: 0px;
   left: 250px; }
   .fund-grid header .logo {
-    margin: 0;
+    margin: 1em 0 0 0;
     text-align: center; }
   .fund-grid header .cart {
     position: fixed;
@@ -425,12 +425,12 @@ h1, h2, h3, h4, h5, p, li {
     margin: 0;
     padding: 0; }
   .fund-grid .featured-funds {
-    margin-bottom: 3.5em; }
+    margin-bottom: 1em; }
     .fund-grid .featured-funds h2 {
       font-family: "pragmatica-web", sans-serif;
       font-weight: 200;
       font-size: 2em;
-      margin-bottom: 1em;
+      margin: 0 0 1em 0;
       text-align: center;
       text-transform: capitalize; }
     .fund-grid .featured-funds ul {
@@ -441,12 +441,12 @@ h1, h2, h3, h4, h5, p, li {
         .fund-grid .featured-funds ul li a {
           color: #fff;
           float: left;
-          height: 180px;
+          height: 190px;
           overflow: visible;
           padding: 1em;
           position: relative;
           text-decoration: none;
-          width: 240px; }
+          width: 260px; }
           .fund-grid .featured-funds ul li a:hover .fakebutton {
             background: #cc3300; }
           .fund-grid .featured-funds ul li a h3, .fund-grid .featured-funds ul li a .fakebutton {
@@ -516,7 +516,15 @@ h1, h2, h3, h4, h5, p, li {
       font-size: 1.4em;
       line-height: 1.2em;
       margin: 0;
-      text-shadow: 0 1px 0 black; }
+      position: relative;
+      text-shadow: 0 1px 0 black;
+      z-index: 2; }
+    .fund-grid .filtered-funds > ul > li:not(.detail) img {
+      opacity: .8;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1; }
     .fund-grid .filtered-funds > ul > li:not(.detail) .cta {
       background: #ff6600;
       -webkit-box-sizing: border-box;
@@ -560,7 +568,7 @@ h1, h2, h3, h4, h5, p, li {
     position: absolute;
     right: 0px;
     left: 25px;
-    z-index: 2; }
+    z-index: 9; }
     .fund-grid .filtered-funds > ul li.detail.active {
       display: block; }
     .fund-grid .filtered-funds > ul li.detail.testimonials .content {

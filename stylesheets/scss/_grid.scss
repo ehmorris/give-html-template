@@ -5,7 +5,7 @@
 
   header {
     .logo {
-      margin: 0;
+      margin: 1em 0 0 0;
       text-align: center;
     }
 
@@ -41,12 +41,12 @@
   }
 
   .featured-funds {
-    margin-bottom: 3.5em;
+    margin-bottom: 1em;
 
     h2 {
       @include font-light;
       font-size: 2em;
-      margin-bottom: 1em;
+      margin: 0 0 1em 0;
       text-align: center;
       text-transform: capitalize;
     }
@@ -62,12 +62,12 @@
           @extend %grid-fund;
           color: #fff;
           float: left;
-          height: 180px;
+          height: 190px;
           overflow: visible;
           padding: 1em;
           position: relative;
           text-decoration: none;
-          width: 240px;
+          width: 260px;
 
           &:hover {
             .fakebutton {
@@ -156,7 +156,15 @@
           font-size: 1.4em;
           line-height: 1.2em;
           margin: 0;
+          position: relative;
           text-shadow: 0 1px 0 #000;
+          z-index: 2;
+        }
+
+        img {
+          opacity: .8;
+          @include position(absolute, 0px 0 0 0px);
+          z-index: 1;
         }
 
         .cta {
@@ -205,7 +213,7 @@
         overflow: auto;
         padding-bottom: 25px;
         @include position(absolute, 0 0px 0 25px);
-        z-index: 2;
+        z-index: 9;
 
         &.active {
           display: block;
