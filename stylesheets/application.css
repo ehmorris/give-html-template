@@ -437,7 +437,9 @@ h1, h2, h3, h4, h5, p, li {
       text-align: center; }
       .fund-grid .featured-funds ul li {
         display: inline-block;
-        margin: 0 35px 35px 0; }
+        margin: 0 35px 35px 0;
+        min-width: 260px;
+        width: 28%; }
         .fund-grid .featured-funds ul li a {
           color: #fff;
           float: left;
@@ -446,7 +448,7 @@ h1, h2, h3, h4, h5, p, li {
           padding: 1em;
           position: relative;
           text-decoration: none;
-          width: 260px; }
+          width: 100%; }
           .fund-grid .featured-funds ul li a:hover .fakebutton {
             background: #cc3300; }
           .fund-grid .featured-funds ul li a h3, .fund-grid .featured-funds ul li a .fakebutton {
@@ -469,7 +471,8 @@ h1, h2, h3, h4, h5, p, li {
           .fund-grid .featured-funds ul li a img {
             position: absolute;
             top: 0px;
-            left: 0px; }
+            left: 0px;
+            width: 100%; }
   .fund-grid .filtered-funds .filter {
     margin-bottom: 25px;
     text-align: center; }
