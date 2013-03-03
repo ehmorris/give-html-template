@@ -596,16 +596,18 @@ h1, h2, h3, h4, h5, p, li {
   box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);
   display: none;
   overflow: auto;
-  padding: 25px 0;
+  padding: 35px 0;
   position: absolute;
   right: 0px;
   left: 0px;
   z-index: 9; }
   .fund-grid .filtered-funds ul.fundlist li.detail.active {
     display: block; }
-  .fund-grid .filtered-funds ul.fundlist li.detail.testimonials .content {
-    width: 384px;
-    float: left; }
+  .fund-grid .filtered-funds ul.fundlist li.detail.testimonials {
+    padding: 25px 0; }
+    .fund-grid .filtered-funds ul.fundlist li.detail.testimonials .content {
+      width: 384px;
+      float: left; }
   .fund-grid .filtered-funds ul.fundlist li.detail .content {
     margin: auto;
     width: 80%; }
