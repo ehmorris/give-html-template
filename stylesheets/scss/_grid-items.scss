@@ -8,6 +8,11 @@
     text-overflow: ellipsis;
     width: 382px;
 
+    @include mobile {
+      width: 100%;
+      height: auto;
+    }
+
     h3 {
       color: $sidebar-color;
       @include font-condensed;
@@ -30,8 +35,18 @@
     margin: 0 12px 12px 0;
     width: 382px;
 
+    @include mobile {
+      height: auto;
+      line-height: 0;
+      width: 100%;
+    }
+
     iframe {
       margin-top: 50px;
+
+      @include mobile {
+        margin: 0;
+      }
     }
   }
 
@@ -111,6 +126,11 @@
         float: left;
         padding: 14px 10px;
         width: 80px;
+
+        @include mobile {
+          width: 50% !important;
+          @include box-sizing(border-box);
+        }
       }
 
       .share {

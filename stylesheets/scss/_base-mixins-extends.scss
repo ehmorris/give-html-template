@@ -28,6 +28,12 @@
   font-weight: 900;
 }
 
+@mixin mobile {
+  @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+    @content;
+  }
+}
+
 %grid-fund {
   background: $sidebar-color;
   @include box-sizing(border-box);
@@ -37,4 +43,8 @@
   padding: 1em;
   text-align: left;
   width: 185px;
+
+  @include mobile {
+    width: 100%;
+  }
 }

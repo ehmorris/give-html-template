@@ -341,6 +341,9 @@ table {
   padding: 1em;
   text-align: left;
   width: 185px; }
+  @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+    .fund-grid .featured-funds ul li a, .fund-grid .filtered-funds ul.fundlist li.fund {
+      width: 100%; } }
 
 body {
   font-family: "pragmatica-web", sans-serif;
@@ -362,7 +365,18 @@ h1, h2, h3, h4, h5, p, li {
   position: fixed;
   top: 0px;
   bottom: 0px;
-  left: 0px; }
+  left: 0px;
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  -ms-transition: all 0.15s ease-out 0;
+  -o-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0;
+  z-index: 10; }
+  @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+    .fund-causes {
+      left: -225px; }
+      .fund-causes:hover {
+        left: 0; } }
   .fund-causes > h2 {
     font-family: "pragmatica-web-condensed", sans-serif;
     font-weight: 400;
@@ -398,6 +412,10 @@ h1, h2, h3, h4, h5, p, li {
   position: absolute;
   right: 0px;
   left: 250px; }
+  @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+    .fund-grid {
+      left: 10px;
+      right: 10px; } }
   .fund-grid header .logo {
     margin: 1em 0 0 0;
     text-align: center; }
@@ -406,6 +424,9 @@ h1, h2, h3, h4, h5, p, li {
     top: 0px;
     right: 25px;
     z-index: 10; }
+    @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+      .fund-grid header .cart {
+        right: 10px; } }
     .fund-grid header .cart a {
       background: #cc3300;
       color: #fff;
@@ -437,18 +458,26 @@ h1, h2, h3, h4, h5, p, li {
       text-align: center; }
       .fund-grid .featured-funds ul li {
         display: inline-block;
-        margin: 0 35px 35px 0;
+        margin: 0 17px 35px;
         min-width: 260px;
         width: 28%; }
+        @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+          .fund-grid .featured-funds ul li {
+            display: block;
+            margin: 0 0 15px;
+            width: 100%; } }
         .fund-grid .featured-funds ul li a {
           color: #fff;
           float: left;
           height: 190px;
-          overflow: visible;
+          overflow: hidden;
           padding: 1em;
           position: relative;
           text-decoration: none;
           width: 100%; }
+          @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+            .fund-grid .featured-funds ul li a {
+              float: none; } }
           .fund-grid .featured-funds ul li a:hover .fakebutton {
             background: #cc3300; }
           .fund-grid .featured-funds ul li a h3, .fund-grid .featured-funds ul li a .fakebutton {
@@ -466,8 +495,12 @@ h1, h2, h3, h4, h5, p, li {
             padding: 8px 24px;
             position: absolute;
             right: -10px;
-            bottom: -5px;
+            bottom: 0px;
             left: -10px; }
+            @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+              .fund-grid .featured-funds ul li a .fakebutton {
+                left: 0;
+                right: 0; } }
           .fund-grid .featured-funds ul li a img {
             position: absolute;
             top: 0px;
@@ -476,11 +509,18 @@ h1, h2, h3, h4, h5, p, li {
   .fund-grid .filtered-funds .filter {
     margin-bottom: 25px;
     text-align: center; }
+    @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+      .fund-grid .filtered-funds .filter {
+        margin-bottom: 35px; } }
     .fund-grid .filtered-funds .filter h2, .fund-grid .filtered-funds .filter select {
       display: inline-block;
       font-family: "pragmatica-web", sans-serif;
       font-weight: 200;
       font-size: 1.8em; }
+      @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+        .fund-grid .filtered-funds .filter h2, .fund-grid .filtered-funds .filter select {
+          margin-bottom: 0;
+          text-align: center; } }
     .fund-grid .filtered-funds .filter select {
       background: #ddd;
       border: 0;
@@ -497,6 +537,10 @@ h1, h2, h3, h4, h5, p, li {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 382px; }
+  @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+    .fund-grid .filtered-funds ul.fundlist li.article {
+      width: 100%;
+      height: auto; } }
   .fund-grid .filtered-funds ul.fundlist li.article h3 {
     color: #333333;
     font-family: "pragmatica-web-condensed", sans-serif;
@@ -514,8 +558,16 @@ h1, h2, h3, h4, h5, p, li {
   height: 322px;
   margin: 0 12px 12px 0;
   width: 382px; }
+  @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+    .fund-grid .filtered-funds ul.fundlist li.video {
+      height: auto;
+      line-height: 0;
+      width: 100%; } }
   .fund-grid .filtered-funds ul.fundlist li.video iframe {
     margin-top: 50px; }
+    @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+      .fund-grid .filtered-funds ul.fundlist li.video iframe {
+        margin: 0; } }
 .fund-grid .filtered-funds ul.fundlist li.fund {
   display: block;
   float: left;
@@ -587,6 +639,12 @@ h1, h2, h3, h4, h5, p, li {
       float: left;
       padding: 14px 10px;
       width: 80px; }
+      @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+        .fund-grid .filtered-funds ul.fundlist li.fund .cta .givenow, .fund-grid .filtered-funds ul.fundlist li.fund .cta .share {
+          width: 50% !important;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; } }
     .fund-grid .filtered-funds ul.fundlist li.fund .cta .share {
       width: 65px; }
 

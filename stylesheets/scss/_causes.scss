@@ -6,6 +6,16 @@
   overflow-y: scroll;
   padding: 25px;
   @include position(fixed, 0px 0 0px 0px);
+  @include transition;
+  z-index: 10;
+
+  @include mobile {
+    left: -225px;
+
+    &:hover {
+      left: 0;
+    }
+  }
 
   > h2 {
     @include font-condensed;
