@@ -138,4 +138,17 @@
       }
     }
   }
+
+  li.inactive {
+    cursor: default;
+    opacity: .3;
+
+    &:hover {
+      cursor: default;
+
+      .cta {
+        display: none;
+      }
+    }
+  }
 }

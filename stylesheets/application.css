@@ -647,6 +647,13 @@ h1, h2, h3, h4, h5, p, li {
           box-sizing: border-box; } }
     .fund-grid .filtered-funds ul.fundlist li.fund .cta .share {
       width: 65px; }
+.fund-grid .filtered-funds ul.fundlist li.inactive {
+  cursor: default;
+  opacity: .3; }
+  .fund-grid .filtered-funds ul.fundlist li.inactive:hover {
+    cursor: default; }
+    .fund-grid .filtered-funds ul.fundlist li.inactive:hover .cta {
+      display: none; }
 
 .fund-grid .filtered-funds ul.fundlist li.detail {
   background: #fff;
