@@ -16,7 +16,7 @@
       padding: 25px 0;
 
       .content {
-        width: 384px;
+        width: 382px;
         float: left;
       }
     }
@@ -95,11 +95,12 @@
 
     aside {
       display: inline-block;
-      margin-left: 16px;
+      margin-left: 12px;
 
       li {
         display: inline-block;
         margin-right: 12px;
+        vertical-align: top;
         width: 185px;
 
         &:last-child {
