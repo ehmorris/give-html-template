@@ -96,12 +96,15 @@
     aside {
       display: inline-block;
       margin-left: 12px;
+      min-width: 578px;
+      text-align: center;
 
       li {
         display: inline-block;
         margin-right: 12px;
         vertical-align: top;
         width: 185px;
+        text-align: left;
 
         &:last-child {
           margin-right: 0;
@@ -109,7 +112,7 @@
 
         figcaption {
           @include font-bold;
-          margin-top: -3em;
+          margin-top: -2.5em;
         }
 
         img {

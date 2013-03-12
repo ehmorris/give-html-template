@@ -723,18 +723,21 @@ h1, h2, h3, h4, h5, p, li {
           text-decoration: none; }
   .fund-grid .filtered-funds ul.fundlist li.detail aside {
     display: inline-block;
-    margin-left: 12px; }
+    margin-left: 12px;
+    min-width: 578px;
+    text-align: center; }
     .fund-grid .filtered-funds ul.fundlist li.detail aside li {
       display: inline-block;
       margin-right: 12px;
       vertical-align: top;
-      width: 185px; }
+      width: 185px;
+      text-align: left; }
       .fund-grid .filtered-funds ul.fundlist li.detail aside li:last-child {
         margin-right: 0; }
       .fund-grid .filtered-funds ul.fundlist li.detail aside li figcaption {
         font-family: "pragmatica-web", sans-serif;
         font-weight: 700;
-        margin-top: -3em; }
+        margin-top: -2.5em; }
       .fund-grid .filtered-funds ul.fundlist li.detail aside li img {
         border-radius: 200px;
         height: 185px;
