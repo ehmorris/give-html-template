@@ -6,3 +6,15 @@ body {
 h1, h2, h3, h4, h5, p, li {
   line-height: 1.4em;
 }
+
+img.fadein {
+  display:none;
+}
+
+#scroll-filler {
+  min-height: 1000px;
+}
+
+#slogan {
+  display:none;
+}
