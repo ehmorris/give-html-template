@@ -647,6 +647,8 @@ h1, h2, h3, h4, h5, p, li {
     text-shadow: 0 1px 0 black;
     z-index: 2; }
   .fund-grid .filtered-funds ul.fundlist li.fund img {
+    min-height: 100%;
+    min-width: 100%;
     opacity: .8;
     position: absolute;
     top: 0px;
