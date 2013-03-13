@@ -717,6 +717,9 @@ h1, h2, h3, h4, h5, p, li {
     .fund-grid .featured-funds li.detail.testimonials .content, .fund-grid .filtered-funds ul.fundlist li.detail.testimonials .content {
       width: 382px;
       float: left; }
+      @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+        .fund-grid .featured-funds li.detail.testimonials .content, .fund-grid .filtered-funds ul.fundlist li.detail.testimonials .content {
+          width: 100%; } }
   .fund-grid .featured-funds li.detail .content, .fund-grid .filtered-funds ul.fundlist li.detail .content {
     margin: auto;
     text-align: left;
@@ -772,12 +775,23 @@ h1, h2, h3, h4, h5, p, li {
     margin-left: 12px;
     min-width: 578px;
     text-align: center; }
+    @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+      .fund-grid .featured-funds li.detail aside, .fund-grid .filtered-funds ul.fundlist li.detail aside {
+        margin: 25px 0;
+        min-width: auto;
+        width: 100%; } }
     .fund-grid .featured-funds li.detail aside li, .fund-grid .filtered-funds ul.fundlist li.detail aside li {
       display: inline-block;
       margin-right: 12px;
       vertical-align: top;
       width: 185px;
       text-align: left; }
+      @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+        .fund-grid .featured-funds li.detail aside li, .fund-grid .filtered-funds ul.fundlist li.detail aside li {
+          width: 45%; }
+          .fund-grid .featured-funds li.detail aside li img, .fund-grid .filtered-funds ul.fundlist li.detail aside li img {
+            height: auto !important;
+            width: 100% !important; } }
       .fund-grid .featured-funds li.detail aside li:last-child, .fund-grid .filtered-funds ul.fundlist li.detail aside li:last-child {
         margin-right: 0; }
       .fund-grid .featured-funds li.detail aside li figcaption, .fund-grid .filtered-funds ul.fundlist li.detail aside li figcaption {
