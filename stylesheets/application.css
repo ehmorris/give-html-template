@@ -330,7 +330,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.fund-grid .featured-funds ul li a, .fund-grid .filtered-funds ul.fundlist li.fund {
+.fund-grid .featured-funds ul .featured-fund a, .fund-grid .filtered-funds ul.fundlist li.fund {
   background: #333333;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -342,7 +342,7 @@ table {
   text-align: left;
   width: 185px; }
   @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
-    .fund-grid .featured-funds ul li a, .fund-grid .filtered-funds ul.fundlist li.fund {
+    .fund-grid .featured-funds ul .featured-fund a, .fund-grid .filtered-funds ul.fundlist li.fund {
       width: 100%; } }
 
 body {
@@ -456,17 +456,17 @@ h1, h2, h3, h4, h5, p, li {
       text-transform: capitalize; }
     .fund-grid .featured-funds ul {
       text-align: center; }
-      .fund-grid .featured-funds ul li {
+      .fund-grid .featured-funds ul .featured-fund {
         display: inline-block;
         margin: 0 17px 35px;
         min-width: 260px;
         width: 28%; }
         @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
-          .fund-grid .featured-funds ul li {
+          .fund-grid .featured-funds ul .featured-fund {
             display: block;
             margin: 0 0 15px;
             width: 100%; } }
-        .fund-grid .featured-funds ul li a {
+        .fund-grid .featured-funds ul .featured-fund a {
           color: #fff;
           float: left;
           height: 190px;
@@ -476,11 +476,11 @@ h1, h2, h3, h4, h5, p, li {
           text-decoration: none;
           width: 100%; }
           @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
-            .fund-grid .featured-funds ul li a {
+            .fund-grid .featured-funds ul .featured-fund a {
               float: none; } }
-          .fund-grid .featured-funds ul li a:hover .fakebutton {
+          .fund-grid .featured-funds ul .featured-fund a:hover .fakebutton {
             background: #cc3300; }
-          .fund-grid .featured-funds ul li a h3, .fund-grid .featured-funds ul li a .fakebutton {
+          .fund-grid .featured-funds ul .featured-fund a h3, .fund-grid .featured-funds ul .featured-fund a .fakebutton {
             font-family: "pragmatica-web-condensed", sans-serif;
             font-weight: 400;
             font-size: 2em;
@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, p, li {
             position: relative;
             text-shadow: 0 1px 0 black;
             z-index: 2; }
-          .fund-grid .featured-funds ul li a .fakebutton {
+          .fund-grid .featured-funds ul .featured-fund a .fakebutton {
             background: #ff6600;
             display: block;
             padding: 8px 24px;
@@ -498,10 +498,10 @@ h1, h2, h3, h4, h5, p, li {
             bottom: 0px;
             left: -10px; }
             @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
-              .fund-grid .featured-funds ul li a .fakebutton {
+              .fund-grid .featured-funds ul .featured-fund a .fakebutton {
                 left: 0;
                 right: 0; } }
-          .fund-grid .featured-funds ul li a img {
+          .fund-grid .featured-funds ul .featured-fund a img {
             position: absolute;
             top: 0px;
             left: 0px;
@@ -655,7 +655,7 @@ h1, h2, h3, h4, h5, p, li {
     .fund-grid .filtered-funds ul.fundlist li.inactive:hover .cta {
       display: none; }
 
-.fund-grid .filtered-funds ul.fundlist li.detail {
+.fund-grid .featured-funds li.detail, .fund-grid .filtered-funds ul.fundlist li.detail {
   background: #fff;
   -webkit-box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);
@@ -666,27 +666,29 @@ h1, h2, h3, h4, h5, p, li {
   right: 0px;
   left: 0px;
   z-index: 9; }
-  .fund-grid .filtered-funds ul.fundlist li.detail.active {
+  .fund-grid .featured-funds li.detail.active, .fund-grid .filtered-funds ul.fundlist li.detail.active {
     display: block; }
-  .fund-grid .filtered-funds ul.fundlist li.detail.testimonials {
+  .fund-grid .featured-funds li.detail.testimonials, .fund-grid .filtered-funds ul.fundlist li.detail.testimonials {
     padding: 25px 0; }
-    .fund-grid .filtered-funds ul.fundlist li.detail.testimonials .content {
+    .fund-grid .featured-funds li.detail.testimonials .content, .fund-grid .filtered-funds ul.fundlist li.detail.testimonials .content {
       width: 382px;
       float: left; }
-  .fund-grid .filtered-funds ul.fundlist li.detail .content {
+  .fund-grid .featured-funds li.detail .content, .fund-grid .filtered-funds ul.fundlist li.detail .content {
     margin: auto;
+    text-align: left;
     width: 80%; }
-    .fund-grid .filtered-funds ul.fundlist li.detail .content h2 {
+    .fund-grid .featured-funds li.detail .content h2, .fund-grid .filtered-funds ul.fundlist li.detail .content h2 {
       color: #333333;
       font-family: "pragmatica-web-condensed", sans-serif;
       font-weight: 400;
       font-size: 2.6em;
       line-height: 1.1em;
-      margin: 0 0 0.5em 0; }
-    .fund-grid .filtered-funds ul.fundlist li.detail .content .cta {
+      margin: 0 0 0.5em 0;
+      text-align: left; }
+    .fund-grid .featured-funds li.detail .content .cta, .fund-grid .filtered-funds ul.fundlist li.detail .content .cta {
       display: block;
       overflow: auto; }
-      .fund-grid .filtered-funds ul.fundlist li.detail .content .cta a {
+      .fund-grid .featured-funds li.detail .content .cta a, .fund-grid .filtered-funds ul.fundlist li.detail .content .cta a {
         background: #ff6600;
         color: #fff;
         display: block;
@@ -699,46 +701,49 @@ h1, h2, h3, h4, h5, p, li {
         padding: 10px;
         text-decoration: none;
         text-shadow: 0 1px 0 black; }
-        .fund-grid .filtered-funds ul.fundlist li.detail .content .cta a:hover {
+        .fund-grid .featured-funds li.detail .content .cta a:hover, .fund-grid .filtered-funds ul.fundlist li.detail .content .cta a:hover {
           opacity: 1; }
-        .fund-grid .filtered-funds ul.fundlist li.detail .content .cta a.cart {
+        .fund-grid .featured-funds li.detail .content .cta a.cart, .fund-grid .filtered-funds ul.fundlist li.detail .content .cta a.cart {
           background: #cc3300; }
-    .fund-grid .filtered-funds ul.fundlist li.detail .content article {
+    .fund-grid .featured-funds li.detail .content article, .fund-grid .filtered-funds ul.fundlist li.detail .content article {
       font-size: 1.4em; }
-    .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know {
+    .fund-grid .featured-funds li.detail .content .donors-you-know, .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know {
       margin: 25px 0 0 0;
       overflow: auto; }
-      .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know h4 {
+      .fund-grid .featured-funds li.detail .content .donors-you-know h4, .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know h4 {
         margin-bottom: .5em;
         margin-top: 0; }
-      .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know ul li {
+      .fund-grid .featured-funds li.detail .content .donors-you-know ul li, .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know ul li {
         float: left;
         margin-right: 10px; }
-      .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know p {
+      .fund-grid .featured-funds li.detail .content .donors-you-know p, .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know p {
         clear: both;
         display: block;
         margin: 0; }
-        .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know p a {
+        .fund-grid .featured-funds li.detail .content .donors-you-know p a, .fund-grid .filtered-funds ul.fundlist li.detail .content .donors-you-know p a {
           color: #ff6600;
           text-decoration: none; }
-  .fund-grid .filtered-funds ul.fundlist li.detail aside {
+  .fund-grid .featured-funds li.detail aside, .fund-grid .filtered-funds ul.fundlist li.detail aside {
     display: inline-block;
     margin-left: 12px;
     min-width: 578px;
     text-align: center; }
-    .fund-grid .filtered-funds ul.fundlist li.detail aside li {
+    .fund-grid .featured-funds li.detail aside li, .fund-grid .filtered-funds ul.fundlist li.detail aside li {
       display: inline-block;
       margin-right: 12px;
       vertical-align: top;
       width: 185px;
       text-align: left; }
-      .fund-grid .filtered-funds ul.fundlist li.detail aside li:last-child {
+      .fund-grid .featured-funds li.detail aside li:last-child, .fund-grid .filtered-funds ul.fundlist li.detail aside li:last-child {
         margin-right: 0; }
-      .fund-grid .filtered-funds ul.fundlist li.detail aside li figcaption {
+      .fund-grid .featured-funds li.detail aside li figcaption, .fund-grid .filtered-funds ul.fundlist li.detail aside li figcaption {
         font-family: "pragmatica-web", sans-serif;
         font-weight: 700;
         margin-top: -2.5em; }
-      .fund-grid .filtered-funds ul.fundlist li.detail aside li img {
+      .fund-grid .featured-funds li.detail aside li img, .fund-grid .filtered-funds ul.fundlist li.detail aside li img {
         border-radius: 200px;
         height: 185px;
         width: 185px; }
+
+.fund-grid .featured-funds li.detail {
+  margin-left: 25px; }

@@ -1,4 +1,4 @@
-.fund-grid .filtered-funds ul.fundlist {
+.fund-grid .featured-funds, .fund-grid .filtered-funds ul.fundlist {
   li.detail {
     background: #fff;
     @include box-shadow(0 20px 20px -10px rgba(0, 0, 0, .2));
@@ -23,6 +23,7 @@
 
     .content {
       margin: auto;
+      text-align: left;
       width: 80%;
 
       h2 {
@@ -31,6 +32,7 @@
         font-size: 2.6em;
         line-height: 1.1em;
         margin: 0 0 .5em 0;
+        text-align: left;
       }
 
       .cta {
@@ -123,4 +125,8 @@
       }
     }
   }
+}
+
+.fund-grid .featured-funds li.detail {
+  margin-left: 25px;
 }
