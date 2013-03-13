@@ -22,20 +22,56 @@
         right: 10px;
       }
 
-      a {
+      a.givenow, a.donate {
         background: $secondary-cta;
         color: #fff;
         display: block;
+        float: right;
         @include font-condensed;
         font-size: 1.4em;
         line-height: 1.1em;
         margin: 0;
+        overflow: auto;
         padding: 8px 10px;
         text-decoration: none;
         text-shadow: 0 1px 0 #000;
 
+        &.givenow {
+          background: $main-cta;
+
+          &:hover {
+            background: $secondary-cta;
+          }
+        }
+
         &:hover {
           background: $main-cta;
+        }
+      }
+
+      .cartitems {
+        background: #fff;
+        border-radius: 2px;
+        @include box-shadow(0 4px 12px rgba(0, 0, 0, .3));
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: .75em;
+        @include position(absolute, 45px 0px 0 0);
+        width: 220px;
+
+        li {
+          a {
+            border-radius: 2px;
+            color: #000;
+            display: block;
+            padding: .75em 1em;
+            text-decoration: none;
+
+            &:hover {
+              background: #ccc;
+            }
+          }
         }
       }
     }

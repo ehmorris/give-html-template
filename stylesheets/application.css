@@ -442,20 +442,47 @@ h1, h2, h3, h4, h5, p, li {
     @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
       .fund-grid header .cart {
         right: 10px; } }
-    .fund-grid header .cart a {
+    .fund-grid header .cart a.givenow, .fund-grid header .cart a.donate {
       background: #cc3300;
       color: #fff;
       display: block;
+      float: right;
       font-family: "pragmatica-web-condensed", sans-serif;
       font-weight: 400;
       font-size: 1.4em;
       line-height: 1.1em;
       margin: 0;
+      overflow: auto;
       padding: 8px 10px;
       text-decoration: none;
       text-shadow: 0 1px 0 black; }
-      .fund-grid header .cart a:hover {
+      .fund-grid header .cart a.givenow.givenow, .fund-grid header .cart a.donate.givenow {
         background: #ff6600; }
+        .fund-grid header .cart a.givenow.givenow:hover, .fund-grid header .cart a.donate.givenow:hover {
+          background: #cc3300; }
+      .fund-grid header .cart a.givenow:hover, .fund-grid header .cart a.donate:hover {
+        background: #ff6600; }
+    .fund-grid header .cart .cartitems {
+      background: #fff;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: block;
+      list-style-type: none;
+      margin: 0;
+      padding: .75em;
+      position: absolute;
+      top: 45px;
+      right: 0px;
+      width: 220px; }
+      .fund-grid header .cart .cartitems li a {
+        border-radius: 2px;
+        color: #000;
+        display: block;
+        padding: 0.75em 1em;
+        text-decoration: none; }
+        .fund-grid header .cart .cartitems li a:hover {
+          background: #ccc; }
   .fund-grid .featured-funds ul, .fund-grid .filtered-funds ul {
     list-style-type: none;
     margin: 0;
