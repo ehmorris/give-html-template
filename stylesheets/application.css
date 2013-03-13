@@ -628,17 +628,15 @@ img.fadein {
   float: left;
   height: 322px;
   margin: 0 12px 12px 0;
-  width: 382px; }
+  width: 579px; }
   @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
     .fund-grid .filtered-funds ul.fundlist li.video {
       height: auto;
       line-height: 0;
       width: 100%; } }
-  .fund-grid .filtered-funds ul.fundlist li.video iframe {
-    margin-top: 50px; }
-    @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
-      .fund-grid .filtered-funds ul.fundlist li.video iframe {
-        margin: 0; } }
+  @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
+    .fund-grid .filtered-funds ul.fundlist li.video iframe {
+      margin: 0; } }
 .fund-grid .filtered-funds ul.fundlist li.fund {
   display: block;
   float: left;

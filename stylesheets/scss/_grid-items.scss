@@ -33,7 +33,7 @@
     float: left;
     height: 322px;
     margin: 0 12px 12px 0;
-    width: 382px;
+    width: 579px;
 
     @include mobile {
       height: auto;
@@ -42,8 +42,6 @@
     }
 
     iframe {
-      margin-top: 50px;
-
       @include mobile {
         margin: 0;
       }
