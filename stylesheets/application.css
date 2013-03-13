@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, p, li {
   @media screen and (max-device-width: 650px), screen and (max-width: 650px) {
     .fund-causes {
       left: -225px; }
-      .fund-causes:hover {
+      .fund-causes:hover, .fund-causes.active {
         left: 0; } }
   .fund-causes > h2 {
     font-family: "pragmatica-web-condensed", sans-serif;
@@ -398,7 +398,22 @@ h1, h2, h3, h4, h5, p, li {
   .fund-causes .selected {
     border-bottom: 2px solid #444444;
     margin: 25px 0;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    position: relative; }
+    .fund-causes .selected.deletable:after {
+      background: #fff;
+      border-radius: 100px;
+      color: #666;
+      content: 'x';
+      font-family: courier, monospace;
+      font-weight: 100;
+      height: 23px;
+      line-height: 21px;
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      text-align: center;
+      width: 23px; }
     .fund-causes .selected a {
       border: 3px solid white;
       color: #fff;
