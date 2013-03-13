@@ -51,25 +51,29 @@
 
       .cartitems {
         background: #fff;
-        border-radius: 2px;
-        @include box-shadow(0 4px 12px rgba(0, 0, 0, .3));
+        @include box-shadow(0 4px 12px rgba(0, 0, 0, .35));
         display: block;
         list-style-type: none;
         margin: 0;
-        padding: .75em;
+        padding: .5em;
         @include position(absolute, 45px 0px 0 0);
         width: 220px;
 
         li {
           a {
-            border-radius: 2px;
+            border: 3px solid transparent;
             color: #000;
             display: block;
             padding: .75em 1em;
             text-decoration: none;
 
             &:hover {
-              background: #ccc;
+              border: 3px solid $main-cta;
+            }
+
+            &:active {
+              background: $main-cta;
+              color: #fff;
             }
           }
         }

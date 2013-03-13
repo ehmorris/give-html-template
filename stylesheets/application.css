@@ -464,25 +464,27 @@ h1, h2, h3, h4, h5, p, li {
         background: #ff6600; }
     .fund-grid header .cart .cartitems {
       background: #fff;
-      border-radius: 2px;
-      -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
       display: block;
       list-style-type: none;
       margin: 0;
-      padding: .75em;
+      padding: .5em;
       position: absolute;
       top: 45px;
       right: 0px;
       width: 220px; }
       .fund-grid header .cart .cartitems li a {
-        border-radius: 2px;
+        border: 3px solid transparent;
         color: #000;
         display: block;
         padding: 0.75em 1em;
         text-decoration: none; }
         .fund-grid header .cart .cartitems li a:hover {
-          background: #ccc; }
+          border: 3px solid #ff6600; }
+        .fund-grid header .cart .cartitems li a:active {
+          background: #ff6600;
+          color: #fff; }
   .fund-grid .featured-funds ul, .fund-grid .filtered-funds ul {
     list-style-type: none;
     margin: 0;
