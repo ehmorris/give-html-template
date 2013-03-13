@@ -459,7 +459,7 @@ img.fadein {
       left: 10px;
       right: 10px; } }
   .fund-grid header .logo {
-    margin: 1em 0 0 0;
+    margin: 0.5em 0 0 0;
     text-align: center; }
   .fund-grid header .cart {
     position: fixed;
